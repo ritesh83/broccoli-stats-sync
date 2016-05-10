@@ -1,5 +1,5 @@
 {
-  "name": "build-stats-sync",
+  "name": "broccoli-stats-sync",
   "version": "0.0.1",
   "description": "Broccoli plugin to report total build size and timestamp",
   "main": "index.js",
