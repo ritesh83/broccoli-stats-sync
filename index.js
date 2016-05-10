@@ -2,7 +2,6 @@ var Plugin    = require('broccoli-plugin');
 var path      = require('path');
 var fs        = require('fs');
 var walkSync  = require('walk-sync');
-var RSVP      = require('rsvp');
 
 MyPlugin.prototype = Object.create(Plugin.prototype);
 MyPlugin.prototype.constructor = MyPlugin;
