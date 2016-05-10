@@ -1,7 +1,7 @@
 {
-  "name": "broccoli-rk",
-  "version": "0.3.1",
-  "description": "Broccoli plugin to move a single file.",
+  "name": "build-stats-sync",
+  "version": "0.0.1",
+  "description": "Broccoli plugin to report total build size and timestamp",
   "main": "index.js",
   "dependencies": {
     "broccoli-plugin": "^1.0.0",
