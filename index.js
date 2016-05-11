@@ -3,10 +3,10 @@ var path      = require('path');
 var fs        = require('fs');
 var walkSync  = require('walk-sync');
 
-MyPlugin.prototype = Object.create(Plugin.prototype);
-MyPlugin.prototype.constructor = MyPlugin;
+StatsSyncPlugin.prototype = Object.create(Plugin.prototype);
+StatsSyncPlugin.prototype.constructor = StatsSyncPlugin;
 
-function MyPlugin(inputNodes, options) {
+function StatsSyncPlugin(inputNodes, options) {
     options = options || {};
   
     Plugin.call(this, inputNodes, {
@@ -16,7 +16,7 @@ function MyPlugin(inputNodes, options) {
     this.options = options;
 }
 
-MyPlugin.prototype.build = function() {
+StatsSyncPlugin.prototype.build = function() {
     var srcDir = this.inputPaths[0];
     var outPath = this.outputPath;
     var totalSize = 0;
@@ -36,4 +36,4 @@ MyPlugin.prototype.build = function() {
     fs.writeFileSync(path.join(this.outputPath, 'build.txt'), JSON.stringify(output));
 };
 
-module.exports = MyPlugin;
+module.exports = StatsSyncPlugin;
